@@ -1,0 +1,11 @@
+C:\Users\monst\source\repos\UnityRealtimeServer\UnityRealtimeServer\bin\Debug\netcoreapp2.0\UnityRealtimeServer.deps.json
+C:\Users\monst\source\repos\UnityRealtimeServer\UnityRealtimeServer\bin\Debug\netcoreapp2.0\UnityRealtimeServer.runtimeconfig.json
+C:\Users\monst\source\repos\UnityRealtimeServer\UnityRealtimeServer\bin\Debug\netcoreapp2.0\UnityRealtimeServer.runtimeconfig.dev.json
+C:\Users\monst\source\repos\UnityRealtimeServer\UnityRealtimeServer\bin\Debug\netcoreapp2.0\UnityRealtimeServer.dll
+C:\Users\monst\source\repos\UnityRealtimeServer\UnityRealtimeServer\bin\Debug\netcoreapp2.0\UnityRealtimeServer.pdb
+C:\Users\monst\source\repos\UnityRealtimeServer\UnityRealtimeServer\obj\Debug\netcoreapp2.0\UnityRealtimeServer.csprojAssemblyReference.cache
+C:\Users\monst\source\repos\UnityRealtimeServer\UnityRealtimeServer\obj\Debug\netcoreapp2.0\UnityRealtimeServer.csproj.CoreCompileInputs.cache
+C:\Users\monst\source\repos\UnityRealtimeServer\UnityRealtimeServer\obj\Debug\netcoreapp2.0\UnityRealtimeServer.AssemblyInfoInputs.cache
+C:\Users\monst\source\repos\UnityRealtimeServer\UnityRealtimeServer\obj\Debug\netcoreapp2.0\UnityRealtimeServer.AssemblyInfo.cs
+C:\Users\monst\source\repos\UnityRealtimeServer\UnityRealtimeServer\obj\Debug\netcoreapp2.0\UnityRealtimeServer.dll
+C:\Users\monst\source\repos\UnityRealtimeServer\UnityRealtimeServer\obj\Debug\netcoreapp2.0\UnityRealtimeServer.pdb

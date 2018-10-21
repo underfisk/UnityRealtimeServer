@@ -1,0 +1,14 @@
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\bin\Debug\netcoreapp2.1\UServer.deps.json
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\bin\Debug\netcoreapp2.1\UServer.runtimeconfig.json
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\bin\Debug\netcoreapp2.1\UServer.runtimeconfig.dev.json
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\bin\Debug\netcoreapp2.1\UServer.dll
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\bin\Debug\netcoreapp2.1\UServer.pdb
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\bin\Debug\netcoreapp2.1\UNetwork.dll
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\bin\Debug\netcoreapp2.1\UNetwork.pdb
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\obj\Debug\netcoreapp2.1\UServer.csprojAssemblyReference.cache
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\obj\Debug\netcoreapp2.1\UServer.csproj.CoreCompileInputs.cache
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\obj\Debug\netcoreapp2.1\UServer.AssemblyInfoInputs.cache
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\obj\Debug\netcoreapp2.1\UServer.AssemblyInfo.cs
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\obj\Debug\netcoreapp2.1\UServer.csproj.CopyComplete
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\obj\Debug\netcoreapp2.1\UServer.dll
+C:\Users\monst\source\repos\UnityRealtimeServer\UServer\obj\Debug\netcoreapp2.1\UServer.pdb
