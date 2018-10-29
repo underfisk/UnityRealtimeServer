@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using UNetwork;
+using UServer.Database;
 
 namespace UServer.Sessions
 {
@@ -33,6 +34,7 @@ namespace UServer.Sessions
             return (playerSessions.FindAll(x => x.Id == playerid).Count > 0);
         }
 
+
         /// <summary>
         /// Returns whether a given connection exists
         /// </summary>
@@ -43,9 +45,30 @@ namespace UServer.Sessions
             return (playerSessions.FindAll(x => x.conn.connectionId == connectionId).Count > 0);
         }
 
-        public static void Find()
+        /// <summary>
+        /// Returns the player id associated with the socket
+        /// </summary>
+        /// <param name="client"></param>
+        /// <returns></returns>
+        public static uint GetPlayerId(NetworkClient client)
         {
+            foreach(var sess in playerSessions)
+            {
+                if (sess.conn.connectionId == client.connectionId)
+                    return sess.Id;
+            }
 
+            return 0;
+        }
+
+        public static PlayerSession Find(string connId)
+        {
+            return playerSessions.Find(x => x.conn.connectionId == connId);
+        }
+
+        public static PlayerSession Find(uint playerid)
+        {
+            return playerSessions.Find(x => x.Id == playerid);
         }
 
         public static void Update()
@@ -71,6 +94,8 @@ namespace UServer.Sessions
         {
             if (playerSessions.Count > 0)
                 playerSessions.RemoveAll(x => x.Id == playerid);
+
+
         }
     }
 }

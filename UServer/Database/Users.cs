@@ -12,15 +12,16 @@ namespace UServer.Database
     public static class Users
     {
         private static QueryFactory db = new QueryFactory(Adapter.Connection, Adapter.Compiler);
+        private static readonly string table_name = "user";
 
         public static IEnumerable<dynamic> GetAll()
         {
-            return db.Query("users").Get();
+            return db.Query(table_name).Get();
         }
 
         public static IEnumerable<dynamic> GetByUsername(string username)
         {
-            return db.Query("users")
+            return db.Query(table_name)
                     .Where("username", username)
                     .Limit(1)
                     .Get();
@@ -28,7 +29,7 @@ namespace UServer.Database
 
         public static IEnumerable<dynamic> GetById(int id)
         {
-            return db.Query("users")
+            return db.Query(table_name)
                     .Where("id", id)
                     .Limit(1)
                     .Get();
@@ -44,8 +45,7 @@ namespace UServer.Database
         {
             ProfileData profile = null;
 
-            var result = db.Query("users")
-                    .Select("id","username","password", "register_date","ingame_name","ingame_avatar","ingame_shards","ingame_gold","ingame_cardback")
+            var result = db.Query(table_name)
                     .WhereRaw("username=?", username)
                     .Limit(1)
                     .Get();
@@ -58,8 +58,14 @@ namespace UServer.Database
                 {
                     return profile = new ProfileData
                     {
-                        username = acc.username,
-                        id = acc.id
+                        Id = acc.id,
+                        Level = acc.level,
+                        Experience = acc.exp,
+                        Avatar = acc.avatar,
+                        Name = acc.name,
+                        Shards = acc.shards,
+                        Gold = acc.gold,
+                        CardBack = acc.cardback
                     };
                 }
             }

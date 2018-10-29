@@ -49,6 +49,10 @@ namespace UNetwork
         /// </summary>
         private event OnDisconnect OnNetworkClientDisconnect;
 
+        /// <summary>
+        /// Returns whether the server is running
+        /// </summary>
+        public bool ServerIsRunning { get { return this.serverIsRunning; } }
 
         /// <summary>
         /// Starts a new listener with the provided address and port
@@ -449,7 +453,7 @@ namespace UNetwork
                             for (int i = 0; i < this._connectedSockets.Count; i++)
                             {
                                 var client = this._connectedSockets[i];
-                                if (client.Socket != null && !client.IsConnected())
+                                if (client != null && client.Socket != null && !client.IsConnected())
                                 {
                                     var netMsg = new NetworkMessage(client, null);
                                     NotifyDisconnection(netMsg);
