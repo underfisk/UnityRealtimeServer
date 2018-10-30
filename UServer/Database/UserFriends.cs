@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using UServer.Sessions;
+using UnityServer.Sessions;
 
-namespace UServer.Database
+namespace UnityServer.Database
 {
     public static class UserFriends
     {

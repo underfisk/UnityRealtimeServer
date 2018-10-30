@@ -9,9 +9,9 @@
       "UServer/1.0.0": {
         "dependencies": {
           "MySql.Data": "8.0.12",
+          "Networking": "1.0.0",
           "SqlKata": "1.1.3",
-          "SqlKata.Execution": "1.1.3",
-          "UNetwork": "1.0.0"
+          "SqlKata.Execution": "1.1.3"
         },
         "runtime": {
           "UServer.dll": {}
@@ -296,13 +296,13 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "UNetwork/1.0.0": {
+      "Networking/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
           "Newtonsoft.Json.Encryption": "1.3.0"
         },
         "runtime": {
-          "UNetwork.dll": {}
+          "Networking.dll": {}
         }
       }
     }
@@ -509,7 +509,7 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "UNetwork/1.0.0": {
+    "Networking/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

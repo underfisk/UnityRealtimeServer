@@ -590,19 +590,18 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "UNetwork/1.0.0": {
+      "Networking/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Microsoft.NETCore.App": "2.0.0",
           "Newtonsoft.Json": "11.0.2",
           "Newtonsoft.Json.Encryption": "1.3.0"
         },
         "compile": {
-          "bin/placeholder/UNetwork.dll": {}
+          "bin/placeholder/Networking.dll": {}
         },
         "runtime": {
-          "bin/placeholder/UNetwork.dll": {}
+          "bin/placeholder/Networking.dll": {}
         }
       }
     }
@@ -2132,19 +2131,19 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "UNetwork/1.0.0": {
+    "Networking/1.0.0": {
       "type": "project",
-      "path": "../UnityRealtimeServer/UNetwork.csproj",
-      "msbuildProject": "../UnityRealtimeServer/UNetwork.csproj"
+      "path": "../Net/Networking.csproj",
+      "msbuildProject": "../Net/Networking.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
       "MySql.Data >= 8.0.12",
+      "Networking >= 1.0.0",
       "SqlKata >= 1.1.3",
-      "SqlKata.Execution >= 1.1.3",
-      "UNetwork >= 1.0.0"
+      "SqlKata.Execution >= 1.1.3"
     ]
   },
   "packageFolders": {
@@ -2154,9 +2153,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\UServer\\UServer.csproj",
-      "projectName": "UServer",
-      "projectPath": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\UServer\\UServer.csproj",
+      "projectUniqueName": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\UServer\\UnityServer.csproj",
+      "projectName": "UnityServer",
+      "projectPath": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\UServer\\UnityServer.csproj",
       "packagesPath": "C:\\Users\\monst\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\UServer\\obj\\",
       "projectStyle": "PackageReference",
@@ -2177,8 +2176,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\UnityRealtimeServer\\UNetwork.csproj": {
-              "projectPath": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\UnityRealtimeServer\\UNetwork.csproj"
+            "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\Net\\Networking.csproj": {
+              "projectPath": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\Net\\Networking.csproj"
             }
           }
         }

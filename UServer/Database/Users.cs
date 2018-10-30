@@ -5,34 +5,54 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UNetwork.Utility;
+using Networking.Utility.Security;
 
-namespace UServer.Database
+namespace UnityServer.Database
 {
+    /// <summary>
+    /// Users database model class
+    /// </summary>
     public static class Users
     {
+        /// <summary>
+        /// Database QueryFactory Instance
+        /// </summary>
         private static QueryFactory db = new QueryFactory(Adapter.Connection, Adapter.Compiler);
-        private static readonly string table_name = "user";
 
-        public static IEnumerable<dynamic> GetAll()
+        /// <summary>
+        /// Selects a user by username
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
+        public static IEnumerable<dynamic> Select(string username)
         {
-            return db.Query(table_name).Get();
-        }
-
-        public static IEnumerable<dynamic> GetByUsername(string username)
-        {
-            return db.Query(table_name)
+            return db.Query("user")
                     .Where("username", username)
                     .Limit(1)
                     .Get();
         }
 
-        public static IEnumerable<dynamic> GetById(int id)
+        /// <summary>
+        /// Selects a user by id (primary key)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public static IEnumerable<dynamic> Select(uint id)
         {
-            return db.Query(table_name)
+            return db.Query("user")
                     .Where("id", id)
                     .Limit(1)
                     .Get();
+        }
+
+        /// <summary>
+        /// Selects all daatabase user within a limit
+        /// </summary>
+        /// <param name="limit"></param>
+        /// <returns></returns>
+        public static IEnumerable<dynamic> SelectAll(int limit = 100)
+        {
+            return db.Query("user").Limit(limit).Get();
         }
 
         /// <summary>
@@ -41,11 +61,11 @@ namespace UServer.Database
         /// <param name="username"></param>
         /// <param name="password"></param>
         /// <returns></returns>
-        public static ProfileData GetProfileWithAuth(string username, string password)
+        public static ProfileData Select(string username, string password)
         {
             ProfileData profile = null;
 
-            var result = db.Query(table_name)
+            var result = db.Query("user")
                     .WhereRaw("username=?", username)
                     .Limit(1)
                     .Get();
@@ -71,6 +91,22 @@ namespace UServer.Database
             }
 
             return profile;
+        }
+
+
+        public static bool Update(uint id, params Tuple<dynamic, dynamic>[] fieldsAndValues)
+        {
+            return false;
+        }
+
+        public static bool Delete(uint id)
+        {
+            return false;
+        }
+
+        public static uint Insert(params dynamic[] data)
+        {
+            return 0;
         }
     }
 }

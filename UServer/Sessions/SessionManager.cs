@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UNetwork;
-using UServer.Database;
+using Networking.Sessions;
+using Networking.Utility;
+using UnityServer.Database;
 
-namespace UServer.Sessions
+namespace UnityServer.Sessions
 {
     /// <summary>
     /// SessionManager manages PlayerSessions with core actions to support with in-game data/server-data
@@ -97,5 +98,6 @@ namespace UServer.Sessions
 
 
         }
+
     }
 }

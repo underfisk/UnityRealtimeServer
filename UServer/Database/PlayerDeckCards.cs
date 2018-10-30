@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using UServer.GameEntity;
+using UnityServer.Entity;
 
-namespace UServer.Database
+namespace UnityServer.Database
 {
     public static class PlayerDeckCards
     {

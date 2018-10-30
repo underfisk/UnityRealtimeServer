@@ -1,13 +1,12 @@
-﻿using System;
-using UNetwork;
-using UServer.GameEntity;
+﻿using Networking.Sessions;
+using System;
+using UnityServer.Entity;
 
-namespace UServer.Sessions
+namespace UnityServer.Sessions
 {
     public class PlayerSession
     {
         public DateTime LoggedTime { get; set; }
-        public Player Entity { get; set; }
         public NetworkClient conn { get; }
         public bool IsLoggedIn { get; set; }
         public uint Id { get; set; }

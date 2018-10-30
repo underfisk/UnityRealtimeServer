@@ -1,7 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using SqlKata.Compilers;
 
-namespace UServer.Database
+namespace UnityServer.Database
 {
     public static class Adapter
     {

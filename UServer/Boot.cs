@@ -1,9 +1,11 @@
-﻿using System.Threading;
-using UNetwork;
-using UServer.Coordinators;
-using UServer.Database;
+﻿using Networking.Core;
+using Networking.Utility;
+using UnityServer.Database;
+using UnityServer.EventServer.GameServer;
+using UnityServer.EventServer.LoginServer;
+using UnityServer.EventServer.StoreServer;
 
-namespace UServer
+namespace UnityServer
 {
     public class Boot
     {
@@ -14,15 +16,15 @@ namespace UServer
             Adapter.Initialize("localhost", 3306, "root", "", "newgame");
             
             Debug.Log("Starting our realtime server.");
-            var server = new NetworkServer("127.0.0.1", 3000);
+            NetworkServer server = new NetworkServer("127.0.0.1", 3000);
 
-            LoginServer loginServer = new LoginServer(server);
-            StoreServer storeServer = new StoreServer(server);
-            GameServer gameServer = new GameServer(server);
+            //Coordinators initialization
+            LoginCoordinator loginServer = new LoginCoordinator(server);
+            StoreCoordinator storeServer = new StoreCoordinator(server);
+            GameCoordinator gameServer = new GameCoordinator(server);
 
             //Server must start after all sub-servers being initialized
             server.Start();
-
 
         }
 
