@@ -2133,8 +2133,8 @@
     },
     "Networking/1.0.0": {
       "type": "project",
-      "path": "../Net/Networking.csproj",
-      "msbuildProject": "../Net/Networking.csproj"
+      "path": "../Networking/Networking.csproj",
+      "msbuildProject": "../Networking/Networking.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2153,9 +2153,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\UServer\\UnityServer.csproj",
-      "projectName": "UnityServer",
-      "projectPath": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\UServer\\UnityServer.csproj",
+      "projectUniqueName": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\UServer\\UNetServer.csproj",
+      "projectName": "UNetServer",
+      "projectPath": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\UServer\\UNetServer.csproj",
       "packagesPath": "C:\\Users\\monst\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\UServer\\obj\\",
       "projectStyle": "PackageReference",
@@ -2176,8 +2176,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\Net\\Networking.csproj": {
-              "projectPath": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\Net\\Networking.csproj"
+            "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\Networking\\Networking.csproj": {
+              "projectPath": "C:\\Users\\monst\\source\\repos\\UnityRealtimeServer\\Networking\\Networking.csproj"
             }
           }
         }

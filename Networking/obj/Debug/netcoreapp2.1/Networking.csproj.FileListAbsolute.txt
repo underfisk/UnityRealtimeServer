@@ -1,0 +1,9 @@
+C:\Users\monst\source\repos\UnityRealtimeServer\Networking\obj\Debug\netcoreapp2.1\Networking.csproj.CoreCompileInputs.cache
+C:\Users\monst\source\repos\UnityRealtimeServer\Networking\obj\Debug\netcoreapp2.1\Networking.AssemblyInfoInputs.cache
+C:\Users\monst\source\repos\UnityRealtimeServer\Networking\obj\Debug\netcoreapp2.1\Networking.AssemblyInfo.cs
+C:\Users\monst\source\repos\UnityRealtimeServer\Networking\bin\Debug\netcoreapp2.1\Networking.deps.json
+C:\Users\monst\source\repos\UnityRealtimeServer\Networking\bin\Debug\netcoreapp2.1\Networking.dll
+C:\Users\monst\source\repos\UnityRealtimeServer\Networking\bin\Debug\netcoreapp2.1\Networking.pdb
+C:\Users\monst\source\repos\UnityRealtimeServer\Networking\obj\Debug\netcoreapp2.1\Networking.csprojAssemblyReference.cache
+C:\Users\monst\source\repos\UnityRealtimeServer\Networking\obj\Debug\netcoreapp2.1\Networking.dll
+C:\Users\monst\source\repos\UnityRealtimeServer\Networking\obj\Debug\netcoreapp2.1\Networking.pdb

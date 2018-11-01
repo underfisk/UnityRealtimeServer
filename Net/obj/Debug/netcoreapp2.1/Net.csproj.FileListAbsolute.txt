@@ -1,6 +1,0 @@
-C:\Users\monst\source\repos\UnityRealtimeServer\Net\bin\Debug\netcoreapp2.1\Net.deps.json
-C:\Users\monst\source\repos\UnityRealtimeServer\Net\bin\Debug\netcoreapp2.1\Net.dll
-C:\Users\monst\source\repos\UnityRealtimeServer\Net\obj\Debug\netcoreapp2.1\Net.csprojAssemblyReference.cache
-C:\Users\monst\source\repos\UnityRealtimeServer\Net\obj\Debug\netcoreapp2.1\Net.csproj.CoreCompileInputs.cache
-C:\Users\monst\source\repos\UnityRealtimeServer\Net\obj\Debug\netcoreapp2.1\Net.AssemblyInfoInputs.cache
-C:\Users\monst\source\repos\UnityRealtimeServer\Net\obj\Debug\netcoreapp2.1\Net.AssemblyInfo.cs
