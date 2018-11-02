@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MasterServer.EventServer.LoginServer
 {
-    public static class LoginEvent
+    public struct LoginEvent
     {
         //Opcodes for login process
         public static readonly short LOGIN_REQUEST = 1000;
@@ -16,6 +16,11 @@ namespace MasterServer.EventServer.LoginServer
         public static readonly short PLAYER_CARDS_SUCCESS = 1101;
         public static readonly short PLAYER_CARDS_FAIL = 1102;
 
+        //Special opcode for all game data
+        public static readonly short GAME_CARDS_REQUEST = 3003;
+        public static readonly short GAME_CARDS_SUCCESS = 3004;
+        public static readonly short GAME_CARDS_FAIL = 3005;
+        
         //Opcode for manual logout request
         public static readonly short LOGOUT_REQUEST = 1003;
 

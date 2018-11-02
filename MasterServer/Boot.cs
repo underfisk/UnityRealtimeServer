@@ -19,6 +19,7 @@ namespace MasterServer
             NetworkServer server = new NetworkServer("127.0.0.1", 3000);
 
             //Coordinators initialization
+            //@todo Make them different threads not only instances
             LoginCoordinator loginServer = new LoginCoordinator(server);
             StoreCoordinator storeServer = new StoreCoordinator(server);
             GameCoordinator gameServer = new GameCoordinator(server);

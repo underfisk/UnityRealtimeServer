@@ -36,6 +36,7 @@ namespace MasterServer.EventServer.LoginServer
             server.RegisterHandler(MsgType.Disconnect, OnPlayerDisconnection);
             server.RegisterHandler(LoginEvent.LOGIN_REQUEST, OnPlayerAuthRequest);
             server.RegisterHandler(LoginEvent.PLAYER_CARDS_REQUEST, OnPlayerCardsRequest);
+            server.RegisterHandler(LoginEvent.GAME_CARDS_REQUEST, OnGameCardsRequest);
         }
 
         /// <summary>
@@ -132,14 +133,24 @@ namespace MasterServer.EventServer.LoginServer
             var userId = SessionManager.GetPlayerId(netMsg.Sender);
             var userDecks = PlayerDeckCards.GetPlayerDecks(userId);
             if (userDecks.Count > 0)
-            {
                 server.SendToClient(netMsg.Sender, LoginEvent.PLAYER_CARDS_SUCCESS, userDecks);
-            }
             else
-            {
-                Debug.Warning("Notify him soon");
                 server.SendToClient(netMsg.Sender, LoginEvent.PLAYER_CARDS_FAIL, null);
-            }
+        }
+
+        /// <summary>
+        /// Handler for the game cards request, which means client
+        /// will retrieve all the cards from the database
+        /// </summary>
+        /// <param name="netMsg"></param>
+        private void OnGameCardsRequest(NetworkMessage netMsg)
+        {
+            //We better have cards
+            var gameCards = GameCards.GetAll();
+            if (gameCards.Count > 0)
+                server.SendToClient(netMsg.Sender, LoginEvent.GAME_CARDS_SUCCESS, gameCards);
+            else
+                server.SendToClient(netMsg.Sender, LoginEvent.GAME_CARDS_FAIL, null);
         }
     }
 }

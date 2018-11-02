@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MasterServer.EventServer.GameServer
 {
-    public static class GameEvent
+    public struct GameEvent
     {
         //Opcodes for player friends with events and request based
         public static readonly short PLAYER_FRIENDS_REQUEST = 1200;

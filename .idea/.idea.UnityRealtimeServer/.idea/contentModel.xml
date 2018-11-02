@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2018.2/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.2/system/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_UnityRealtimeServer.-315976471.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="MasterServer" t="IncludeRecursive">
+        <e p="Boot.cs" t="Include" />
+        <e p="Database" t="Include">
+          <e p="Adapter.cs" t="Include" />
+          <e p="PlayerDeckCards.cs" t="Include" />
+          <e p="UserFriends.cs" t="Include" />
+          <e p="Users.cs" t="Include" />
+        </e>
+        <e p="Entity" t="Include">
+          <e p="DeckCard.cs" t="Include" />
+          <e p="PlayerDeck.cs" t="Include" />
+        </e>
+        <e p="EventServer" t="Include">
+          <e p="GameServer" t="Include">
+            <e p="DataStructures" t="Include">
+              <e p="Friend.cs" t="Include" />
+            </e>
+            <e p="GameCoordinator.cs" t="Include" />
+            <e p="GameEvent.cs" t="Include" />
+          </e>
+          <e p="LoginServer" t="Include">
+            <e p="DataStructures" t="Include">
+              <e p="ActionError.cs" t="Include" />
+              <e p="AuthData.cs" t="Include" />
+              <e p="ProfileData.cs" t="Include" />
+            </e>
+            <e p="LoginCoordinator.cs" t="Include" />
+            <e p="LoginEvent.cs" t="Include" />
+          </e>
+          <e p="MatchServer" t="Include">
+            <e p="MatchCoordinator.cs" t="Include" />
+          </e>
+          <e p="MatchmakingServer" t="Include">
+            <e p="MatchmakingCoordinator.cs" t="Include" />
+          </e>
+          <e p="StoreServer" t="Include">
+            <e p="StoreCoordinator.cs" t="Include" />
+          </e>
+        </e>
+        <e p="MasterServer.csproj" t="IncludeRecursive" />
+        <e p="Sessions" t="Include">
+          <e p="PlayerSession.cs" t="Include" />
+          <e p="SessionManager.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="MasterServer.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Networking" t="IncludeRecursive">
+        <e p="Core" t="Include">
+          <e p="NetworkServer.cs" t="Include" />
+        </e>
+        <e p="Networking.csproj" t="IncludeRecursive" />
+        <e p="Packets" t="Include">
+          <e p="MsgType.cs" t="Include" />
+          <e p="NetworkMessage.cs" t="Include" />
+          <e p="Packet.cs" t="Include" />
+        </e>
+        <e p="Sessions" t="Include">
+          <e p="NetworkClient.cs" t="Include" />
+        </e>
+        <e p="Utility" t="Include">
+          <e p="Debug.cs" t="Include" />
+          <e p="JPacketBuilder.cs" t="Include" />
+          <e p="PacketBuilder.cs" t="Include" />
+          <e p="Security" t="Include">
+            <e p="AES.cs" t="Include" />
+            <e p="Cipher.cs" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Networking.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="UnityRealtimeServer.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
