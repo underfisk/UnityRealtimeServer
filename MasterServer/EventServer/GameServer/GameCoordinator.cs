@@ -8,18 +8,18 @@ using MasterServer.Sessions;
 namespace MasterServer.EventServer.GameServer
 {
     /// <summary>
-    /// This sub-Server is responsible for handling general requests such as Friend Events, News Events, Update Events, Creation Events
+    /// This sub-_server is responsible for handling general requests such as Friend Events, News Events, Update Events, Creation Events
     /// </summary>
     public sealed class GameCoordinator
     {
         /// <summary>
-        /// UNetwork Server Instance booted already in our main function
+        /// UNetwork _server Instance booted already in our main function
         /// </summary>
-        private NetworkServer Server;
+        private readonly NetworkServer _server;
 
         public GameCoordinator(NetworkServer runningServer)
         {
-            this.Server = runningServer;
+            this._server = runningServer;
             Initialize();
         }
 
@@ -28,11 +28,11 @@ namespace MasterServer.EventServer.GameServer
         /// </summary>
         private void Initialize()
         {
-            Server.RegisterHandler(GameEvent.PLAYER_FRIENDS_REQUEST, OnPlayerFriendsRequest);
+            _server.RegisterHandler(GameEvent.PLAYER_FRIENDS_REQUEST, OnPlayerFriendsRequest);
         }
 
         /// <summary>
-        /// Handler responsable for retrieve player friends and return it
+        /// Handler a request to0 retrieve aa player friends
         /// </summary>
         /// <param name="netMsg"></param>
         private void OnPlayerFriendsRequest(NetworkMessage netMsg)
@@ -40,7 +40,7 @@ namespace MasterServer.EventServer.GameServer
             var userId = SessionManager.GetPlayerId(netMsg.Sender);
             var friends = UserFriends.GetAll(userId);
             if (friends.Count > 0)
-                Server.SendToClient(netMsg.Sender, GameEvent.PLAYER_FRIENDS_SUCCESS, friends);
+                _server.SendToClient(netMsg.Sender, GameEvent.PLAYER_FRIENDS_SUCCESS, friends);
             else
                 Debug.Warning("He has none so just send a event error message type saying it");
         }

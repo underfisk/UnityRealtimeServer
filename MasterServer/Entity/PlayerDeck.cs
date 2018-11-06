@@ -12,7 +12,7 @@ namespace MasterServer.Entity
         public string Name;
         public int Faction;
 
-        public List<DeckCard> deckCards;
+        public List<DeckCard> DeckCards;
         
     }
 }

@@ -28,7 +28,7 @@ namespace MasterServer
             StoreCoordinator storeServer = new StoreCoordinator(server);
             GameCoordinator gameServer = new GameCoordinator(server);
 
-            //Show credits
+            //Show repo information
             DisplayRepoInformation();
             //Display Build Version
             DisplayBuildVersion();
@@ -37,6 +37,9 @@ namespace MasterServer
 
         }
 
+        /// <summary>
+        /// Diplay sthe build version saved at the assembly
+        /// </summary>
         static void DisplayBuildVersion()
         {
             System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
@@ -47,12 +50,22 @@ namespace MasterServer
             
         }
 
+        /// <summary>
+        /// Displays the build date
+        /// </summary>
         static void DisplayBuildDate()
         {
-            var date = GetLinkerTime(Assembly.GetExecutingAssembly());
+            var date = GetLinkerTime(Assembly.GetExecutingAssembly(), TimeZoneInfo.Local);
             Debug.Log($"Build date: {date}");
         }
-        public static DateTime GetLinkerTime(Assembly assembly, TimeZoneInfo target = null)
+        
+        /// <summary>
+        /// Returns assembly build date to normal date
+        /// </summary>
+        /// <param name="assembly"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        static DateTime GetLinkerTime(Assembly assembly, TimeZoneInfo target = null)
         {
             var filePath = assembly.Location;
             const int c_PeHeaderOffset = 60;

@@ -50,7 +50,7 @@ namespace MasterServer.Database
                         Console.WriteLine("Getting deck id cards " + deck.Id);
                         var cards = GetDeckCards(deck.Id);
                         Console.WriteLine(cards.ToString());
-                        deck.deckCards = cards;
+                        deck.DeckCards = cards;
                     }
                 }
             }
